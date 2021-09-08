@@ -78,7 +78,7 @@ function addToCartList(id) {
 
 // Exercise 2
 function cleanCart() {
-
+    cartList.length = 0; //vaciar todos los elementos del carrito
 }
 
 // Exercise 3
@@ -110,7 +110,7 @@ function applyPromotionsCart() {
 
 // Exercise 8
 function addToCart(id) {
-    addToCartList(id); //Necesari per que funcini el exercici1 . Esborrar per fer exercici 8.
+    addToCartList(id); //Necesari per que funcini el exercici 1 . Esborrar per fer exercici 8.
     // 1. Loop for to the array products to get the item to add to cart
     // 2. Add found product to the cartList array
 }
