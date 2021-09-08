@@ -68,7 +68,12 @@ var total = 0;
 // Exercise 1
 function addToCartList(id) {
     // 1. Loop for to the array products to get the item to add to cart
-    // 2. Add found product to the cartList array
+        for (let i= 0; i<products.length; i++){
+            if (id===i){
+            // 2. Add found product to the cartList array
+            cartList.push(products[i]);
+            }
+    }
 }
 
 // Exercise 2
@@ -105,6 +110,7 @@ function applyPromotionsCart() {
 
 // Exercise 8
 function addToCart(id) {
+    addToCartList(id); //Necesari per que funcini el exercici1 . Esborrar per fer exercici 8.
     // 1. Loop for to the array products to get the item to add to cart
     // 2. Add found product to the cartList array
 }
