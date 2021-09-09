@@ -85,26 +85,26 @@ function cleanCart() {
 function calculateSubtotals() {
     // 1. Create a for loop on the "cartList" array 
     for (let i= 0; i<cartList.length; i++){
-        debugger
     // 2. Implement inside the loop an if...else or switch...case to add the quantities of each type of product, obtaining the subtotals: subtotalGrocery, subtotalBeauty and subtotalClothes
         switch (cartList[i].type) {
             case 'grocery':
                 subtotal.grocery.value = subtotal.grocery.value + cartList[i].price;
-                console.log(subtotal.grocery);
+                break;
 
             case 'beauty':
                 subtotal.beauty.value = subtotal.beauty.value + + cartList[i].price;
-                console.log(subtotal.beauty);
+                break;
 
             case 'clothes':
                 subtotal.clothes.value = subtotal.clothes.value + + cartList[i].price;
-                console.log(subtotal.clothes);
+                break;
         
             default:
                 break;
         }
     }
 }
+
 // Exercise 4
 function calculateTotal() {
     // Calculate total price of the cart either using the "cartList" array
@@ -116,7 +116,10 @@ function calculateTotal() {
 
 // Exercise 5
 function applyPromotionsSubtotals() {
-
+//1- Buscar Qaceites
+//2- Buscar Qmezcla
+//3- Si compra más de 3 aceites el price será 10 eur
+//4- Si compra más de 10 mezcla el price será = (price/3)*2
 }
 
 // Exercise 6
